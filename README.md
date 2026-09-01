@@ -1,62 +1,37 @@
-# 🎓 CS-Office: ระบบบริหารจัดการหลักสูตรวิทยาการคอมพิวเตอร์
-*(Computer Science Curriculum & Academic Management System)*
+# 📄 CS-Office: ระบบวิเคราะห์เอกสารหลักสูตรวิทยาการคอมพิวเตอร์
+*(Computer Science Curriculum Document Analysis & Analytics)*
 
-[![Status](https://img.shields.io/badge/Status-In--Development-yellow.svg)](#)
-[![Field](https://img.shields.io/badge/Domain-Computer_Science_Curriculum-blue.svg)](#)
-[![Standard](https://img.shields.io/badge/Standard-OBE_|_AUN--QA-green.svg)](#)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Colab](https://img.shields.io/badge/Run%20in-Google%20Colab-orange.svg)](https://colab.research.google.com/)
+[![Focus](https://img.shields.io/badge/Task-Document_Analysis_%26_NLP-green.svg)](#)
 
----
-
-## 📌 บทนำและภาพรวมโครงการ (Overview)
-
-**CS-Office** เป็นแพลตฟอร์มระบบสารสนเทศเพื่อสนับสนุนการบริหารจัดการหลักสูตรวิทยาการคอมพิวเตอร์ (Computer Science) ครอบคลุมตั้งแต่การจัดการโครงสร้างหลักสูตร การติดตามผลลัพธ์การเรียนรู้ (Outcome-Based Education: OBE), การวางแผนภาระงานอาจารย์, การติดตามความก้าวหน้าของนักศึกษา ไปจนถึงการรวบรวมข้อมูลเพื่อการประกันคุณภาพการศึกษาและการประเมินผลตามเกณฑ์มาตรฐาน (AUN-QA / EdPEx / มคอ.)
+ชุดเครื่องมือและสคริปต์ภาษา Python (รองรับการทำงานบน Google Colab และ Local Jupyter Notebook) สำหรับการอ่าน สกัดข้อมูล ตรวจสอบ และวิเคราะห์เอกสารที่เกี่ยวข้องกับการบริหารจัดการหลักสูตรวิทยาการคอมพิวเตอร์
 
 ---
 
-## 🚀 ฟีเจอร์หลักที่สำคัญ (Key Features)
+## 🎯 วัตถุประสงค์ (Objectives)
 
-### 1. 📚 การจัดการหลักสูตรและโครงสร้างรายวิชา (Curriculum & Course Catalog)
-- จัดเก็บและจัดการเล่มหลักสูตร แผนการศึกษา และข้อกำหนดการจบการศึกษา
-- จัดการหมวดวิชา (ศึกษาทั่วไป, วิชาเฉพาะ, วิชาเลือกเสรี ฯลฯ) พร้อมเงื่อนไขวิชาบังคับก่อน (Prerequisites)
-- รองรับการปรับปรุงหลักสูตรและการเทียบโอนรายวิชาในแต่ละรอบหลักสูตร
-
-### 2. 🎯 การจัดการผลลัพธ์การเรียนรู้ตามแนวทาง OBE (OBE & Assessment)
-- จัดการผลลัพธ์การเรียนรู้ระดับหลักสูตร (**PLOs**: Program Learning Outcomes)
-- จัดการผลลัพธ์การเรียนรู้ระดับรายวิชา (**CLOs**: Course Learning Outcomes)
-- แผนที่การกระจายความรับผิดชอบ (Curriculum Mapping) เชื่อมโยง PLOs และ CLOs
-- ระบบบันทึกและประเมินผลสัมฤทธิ์การเรียนรู้ของผู้เรียนตามเกณฑ์ OBE
-
-### 3. 👨‍🏫 การจัดการภาระงานและบุคลากรผู้สอน (Faculty & Workload)
-- จัดสรรผู้สอนตามรายวิชา ภาคทฤษฎี/ปฏิบัติการ (Lecture / Lab)
-- บันทึกและคำนวณภาระงานสอน ที่ปรึกษาโครงงานวิจัย และที่ปรึกษาทางวิชาการ
-- จัดการตารางเวลาว่างและจัดตารางสอนเพื่อป้องกันการชนกันของห้องและผู้สอน
-
-### 4. 🎓 การติดตามและดูแลนักศึกษา (Student Academic Tracking)
-- บันทึกและตรวจสอบประวัติการลงทะเบียนและผลการเรียน
-- ระบบแจ้งเตือนนักศึกษาที่มีความเสี่ยงทางการเรียน (Academic Risk Alert)
-- การจัดสรรและติดตามโครงงานวิจัย/โครงงานวิทยาการคอมพิวเตอร์ (Senior Project)
-- ตรวจสอบสถานะความพร้อมในการสำเร็จการศึกษา (Degree Audit)
-
-### 5. 📑 งานประกันคุณภาพการศึกษาและเอกสารหลักสูตร (QA & Documentation)
-- สนับสนุนการจัดทำเอกสารและรายงานผลการดำเนินงานของหลักสูตร
-- รองรับมาตรฐานการประกันคุณภาพ เช่น AUN-QA, เกณฑ์มาตรฐานหลักสูตรระดับอุดมศึกษา
-- คลังเอกสารหลักสูตร มคอ.3, มคอ.5, ประมวลรายวิชา (Course Syllabus) และเอกสารประเมินผล
-
-### 6. 📊 แดชบอร์ดและการวิเคราะห์ข้อมูล (Dashboard & Analytics)
-- แดชบอร์ดสรุปสถิตินักศึกษา อัตราการตกออก และอัตราการสำเร็จการศึกษา
-- สรุปผลสัมฤทธิ์ของ PLOs แบบภาพรวมเพื่อนำไปสู่การปรับปรุงหลักสูตรอย่างต่อเนื่อง (CQI: Continuous Quality Improvement)
+1. **สกัดและแปลงข้อมูลจากเอกสารหลักสูตร (Document Parsing & Extraction)**:
+   - แปลงไฟล์เอกสารต่างๆ (PDF, Word `.docx`, Excel `.xlsx`) ของเล่มหลักสูตร (มคอ.2), ประมวลรายวิชา (Syllabus / มคอ.3), และรายงานผลรายวิชา (มคอ.5) ให้เป็นข้อมูลที่มีโครงสร้าง (Structured Data)
+2. **วิเคราะห์ความสอดคล้องของผลลัพธ์การเรียนรู้ (Curriculum & OBE Alignment)**:
+   - ตรวจสอบความเชื่อมโยงระหว่างผลการเรียนรู้ระดับหลักสูตร (PLOs) และระดับรายวิชา (CLOs)
+   - วิเคราะห์ Curriculum Mapping ว่าครอบคลุมและกระจายตัวเหมาะสมตามเกณฑ์หรือไม่
+3. **ตรวจสอบความสอดคล้องตามเกณฑ์มาตรฐาน (Compliance & QA Checking)**:
+   - ตรวจสอบโครงสร้างหน่วยกิต, หมวดวิชา, เงื่อนไขวิชาบังคับก่อน (Prerequisites) ตามเกณฑ์มาตรฐานหลักสูตรระดับอุดมศึกษา
+   - สนับสนุนการรวบรวมหลักฐานและวิเคราะห์ข้อมูลเพื่อการประกันคุณภาพ (AUN-QA / EdPEx)
+4. **ใช้ประโยชน์จาก AI / NLP / LLM ในงานเอกสารหลักสูตร**:
+   - ค้นหา เปรียบเทียบความซ้ำซ้อน และสรุปเนื้อหารายวิชาด้วย Natural Language Processing (NLP)
+   - ใช้โมเดลภาษา (LLM) ในการตอบคำถาม ตรวจทาน และให้ข้อเสนอแนะในการปรับปรุงหลักสูตร
 
 ---
 
-## 🛠️ โครงสร้างเทคโนโลยีที่แนะนำ (Recommended Tech Stack)
+## 🔍 ฟังก์ชันการวิเคราะห์หลัก (Core Capabilities)
 
-| ส่วนของระบบ | เทคโนโลยีที่แนะนำ | รายละเอียด |
-|---|---|---|
-| **Frontend** | React / Next.js / Vue.js | UI สไตล์ทันสมัย รองรับ Responsive Web และ Dashboard Analytics |
-| **Backend** | Node.js (Express/NestJS) / Python (FastAPI/Django) | RESTful API หรือ GraphQL จัดการ Business Logic และ Authentication |
-| **Database** | PostgreSQL / MySQL | ฐานข้อมูล Relational Database สำหรับเก็บข้อมูลหลักสูตรและผลการเรียนรู้ |
-| **ORM / Query** | Prisma / TypeORM / SQLAlchemy | จัดการ Data Schema และ Migrations อย่างปลอดภัย |
-| **Authentication** | OAuth2 / JWT / Single Sign-On (SSO มหาวิทยาลัย) | ระบบยืนยันตัวตนสำหรับอาจารย์ เจ้าหน้าที่ และนักศึกษา |
+- **📄 Document Extraction**: ดึงข้อความ ตารางคำอธิบายรายวิชา และผลลัพธ์การเรียนรู้จากไฟล์ PDF / DOCX
+- **🗺️ Curriculum Mapping Analysis**: วิเคราะห์เมทริกซ์ความรับผิดชอบ (ความรับผิดชอบหลัก/รอง) เชื่อมโยงรายวิชาสู่ PLOs
+- **📊 Credit & Course Structure Check**: สรุปสัดส่วนหน่วยกิต แยกตามกลุ่มวิชาและชั้นปี
+- **🔗 Prerequisite Chain Visualizer**: วิเคราะห์และสร้างผังความสัมพันธ์ของวิชาบังคับก่อน ป้องกันวงรอบที่ผิดพลาด (Circular Dependencies)
+- **💬 Semantic Search & Topic Modeling**: ค้นหาความทับซ้อนของเนื้อหารายวิชา (Course Content Overlap) เพื่อการปรับปรุงหลักสูตร
 
 ---
 
@@ -64,85 +39,66 @@
 
 ```text
 cs-office/
-├── docs/                     # เอกสารประกอบการออกแบบระบบและข้อกำหนดหลักสูตร
-├── src/                      # ซอร์สโค้ดหลักของระบบ
-│   ├── frontend/             # เว็บแอปพลิเคชันส่วนหน้า (UI & Dashboards)
-│   │   ├── components/       # UI Components
-│   │   ├── pages/            # หน้าหลักของระบบ (Curriculum, Courses, Students, QA)
-│   │   └── styles/           # Styling & Themes
-│   └── backend/              # ระบบส่วนหลัง (API Services)
-│       ├── controllers/      # Route Handlers
-│       ├── services/         # Business Logic (OBE calculation, Degree Audit)
-│       ├── models/           # Data Schema & Database entities
-│       └── utils/            # ฟังก์ชันตัวช่วยและการจัดการไฟล์
-├── database/                 # สคริปต์ฐานข้อมูลและการ Migrate
-│   ├── migrations/
-│   └── seeds/                # ข้อมูลตั้งต้น (รายวิชา, PLOs, โครงสร้างหลักสูตร)
-├── tests/                    # ชุดทดสอบ Unit Test / Integration Test
-├── .env.example              # ตัวอย่างการตั้งค่า Environment Variables
-├── .gitignore
-└── README.md                 # ข้อมูลและคู่มือการใช้งานระบบ
+├── data/
+│   ├── raw/                  # ไฟล์เอกสารต้นฉบับ (PDF, DOCX, XLSX เล่มหลักสูตร/มคอ.)
+│   ├── processed/            # ข้อมูลข้อความและตารางที่สกัดแล้ว (JSON, CSV)
+│   └── reference/            # เกณฑ์อ้างอิง, รายการ PLOs, มาตรฐานหลักสูตร
+├── notebooks/                # Jupyter / Google Colab Notebooks สำหรับการวิเคราะห์
+│   ├── 01_extract_curriculum.ipynb    # สกัดข้อมูลจากเล่มหลักสูตร
+│   ├── 02_analyze_mapping.ipynb       # วิเคราะห์ Curriculum Mapping (PLOs - CLOs)
+│   ├── 03_prerequisites_graph.ipynb   # วิเคราะห์โครงข่ายวิชาบังคับก่อน
+│   └── 04_content_similarity.ipynb    # วิเคราะห์ความซ้ำซ้อนและหัวข้อรายวิชา
+├── src/                      # ฟังก์ชันและโมดูล Python
+│   ├── parsers/              # โมดูลแยกข้อความและตารางจาก PDF/DOCX
+│   ├── analyzers/            # การคำนวณสถิติ, ตรวจสอบเกณฑ์, วิเคราะห์ Mapping
+│   ├── nlp/                  # การตัดคำภาษาไทย, Embedding, LLM Analysis
+│   └── utils/                # ฟังก์ชันนำเข้า/ส่งออกข้อมูล และจัดการกราฟ
+├── reports/                  # ผลลัพธ์การวิเคราะห์ (กราฟ, ตารางสรุป, Excel, HTML)
+├── requirements.txt          # รายการไลบรารีที่จำเป็น
+└── README.md
 ```
 
 ---
 
-## ⚙️ การเริ่มต้นติดตั้งและใช้งาน (Getting Started)
+## 🛠️ เครื่องมือและไลบรารีที่ใช้ (Libraries & Tools)
 
-### 1. ความต้องการของระบบ (Prerequisites)
-- Node.js (เวอร์ชัน 18+ หรือ 20+) หรือ Python (เวอร์ชัน 3.10+) ตามเทคโนโลยีที่เลือก
-- ฐานข้อมูล เช่น PostgreSQL หรือ MySQL
-- Git
-
-### 2. โคลนคลังโค้ด (Clone Repository)
-```bash
-git clone <repository-url>
-cd cs-office
-```
-
-### 3. ตั้งค่าสภาพแวดล้อม (Environment Setup)
-คัดลอกไฟล์ `.env.example` เป็น `.env` และแก้ไขค่าคอนฟิก:
-```bash
-cp .env.example .env
-```
-
-### 4. ติดตั้ง Dependencies และเริ่มต้นระบบ
-*(ตัวอย่างสำหรับ Node.js Stack)*
-```bash
-# ติดตั้งแพ็กเกจ
-npm install
-
-# รัน Migration ฐานข้อมูล
-npm run db:migrate
-
-# รันระบบในโหมดพัฒนา
-npm run dev
-```
+- **การจัดการเอกสารและตาราง**:
+  - `pypdf`, `pdfplumber`, `PyMuPDF (fitz)` สำหรับไฟล์ PDF
+  - `python-docx` สำหรับเอกสาร Word
+  - `pandas`, `openpyxl` สำหรับการประมวลผลตารางและ Excel
+- **NLP และการวิเคราะห์ข้อความ**:
+  - `pythainlp` การตัดคำและการประมวลผลข้อความภาษาไทย
+  - `sentence-transformers` / `scikit-learn` สำหรับคำนวณ Text Similarity และ Clustering
+  - `openai` / `google-generativeai` สำหรับการวิเคราะห์เชิงลึกด้วย LLM
+- **การนำเสนอข้อมูล (Visualization)**:
+  - `matplotlib`, `seaborn`, `networkx` สำหรับวาดกราฟโครงข่ายวิชาและ Heatmap
 
 ---
 
-## 👥 ผู้ใช้งานระบบและบทบาท (Roles & Permissions)
+## 🚀 การเริ่มต้นใช้งาน (Getting Started)
 
-1. **ประธานหลักสูตร / คณะกรรมการบริหารหลักสูตร (Program Director / Committee)**
-   - จัดการภาพรวมหลักสูตร, กำหนด PLOs, ตรวจสอบรายงานประกันคุณภาพ
-2. **อาจารย์ผู้สอน / อาจารย์ที่ปรึกษา (Instructors & Advisors)**
-   - กำหนด CLOs, บันทึกการประเมินผลตามเกณฑ์, ตรวจสอบและให้คำปรึกษานักศึกษา
-3. **เจ้าหน้าที่ประจำหลักสูตร (Academic Officer / Administrator)**
-   - จัดการข้อมูลพื้นฐาน, ตารางสอน, ข้อมูลรายวิชา และประสานงานเอกสาร
-4. **นักศึกษา (Students)**
-   - ตรวจสอบแผนการเรียน, ติดตามผลการเรียนรู้ของตนเอง, ส่งหัวข้อโครงงาน
+### การใช้งานบน Google Colab
+1. อัปโหลดโฟลเดอร์โปรเจกต์ไปยัง Google Drive
+2. นำไฟล์เอกสารหลักสูตร (PDF หรือ DOCX) ไปวางไว้ใน `data/raw/`
+3. เปิดสมุดงานในโฟลเดอร์ `notebooks/` ผ่าน Google Colab
+4. สั่ง Mount Drive และรันขั้นตอนการวิเคราะห์ตามลำดับ
 
----
-
-## 🤝 การมีส่วนร่วมในการพัฒนา (Contributing)
-
-1. Fork โปรเจกต์นี้
-2. สร้าง Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit การเปลี่ยนแปลง (`git commit -m 'Add some AmazingFeature'`)
-4. Push ไปยัง Branch (`git push origin feature/AmazingFeature`)
-5. เปิด Pull Request เพื่อขอรีวิวโค้ด
+### การใช้งานบนเครื่อง Local
+1. ติดตั้งไลบรารีที่จำเป็น:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. วางเอกสารที่ต้องการวิเคราะห์ใน `data/raw/`
+3. รัน Jupyter Notebook หรือสคริปต์วิเคราะห์:
+   ```bash
+   jupyter notebook
+   ```
 
 ---
 
-## 📄 สัญญาอนุญาต (License)
+## 📌 ผลลัพธ์ที่ได้จากการวิเคราะห์ (Expected Outputs)
 
-โปรเจกต์นี้อยู่ภายใต้สัญญาอนุญาต [MIT License](LICENSE)
+- **ตารางสรุปรายวิชาและหน่วยกิต** ในรูปแบบ Excel / CSV
+- **Heatmap เมทริกซ์ความรับผิดชอบ (Curriculum Mapping)** เพื่อดูช่องว่าง (Gaps) ของผลการเรียนรู้
+- **ผังโครงข่ายวิชาบังคับก่อน (Prerequisite Graph)** แบบโต้ตอบได้
+- **รายงานสรุปข้อสังเกตและข้อเสนอแนะ** สำหรับการปรับปรุงหลักสูตรในรอบถัดไป

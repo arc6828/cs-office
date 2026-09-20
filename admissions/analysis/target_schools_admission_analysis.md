@@ -2,7 +2,7 @@
 ## สรุป 20 โรงเรียนเป้าหมายหลักสำหรับการประชาสัมพันธ์เชิงรุก
 **หลักสูตรวิทยาการคอมพิวเตอร์ (วท.บ.)**
 
-[![Data Source](https://img.shields.io/badge/Data_Source-Admissiom.xlsx-blue.svg)](file:///e:/chavalit/colab/cs-office/admissions/analysis/Admissiom.xlsx)
+[![Data Source](https://img.shields.io/badge/Data_Source-Admissiom.xlsx-blue.svg)](./Admissiom.xlsx)
 [![Timespan](https://img.shields.io/badge/Timespan-5_Academic_Years_(2565--2569)-green.svg)](#)
 [![Total Records](https://img.shields.io/badge/Total_Applicants-407_Students-orange.svg)](#)
 [![Total Schools](https://img.shields.io/badge/Feeder_Schools-256_Institutions-purple.svg)](#)
@@ -11,7 +11,7 @@
 
 ## Executive Summary (บทสรุปสำหรับผู้บริหาร)
 
-รายงานฉบับนี้จัดทำขึ้นจากการประมวลผลและวิเคราะห์ข้อมูลสถิติการรับสมัครนักศึกษาใหม่หลักสูตรวิทยาการคอมพิวเตอร์ ย้อนหลัง 5 ปีการศึกษา (2565 – 2569) จากฐานข้อมูล [Admissiom.xlsx](file:///e:/chavalit/colab/cs-office/admissions/analysis/Admissiom.xlsx) ซึ่งมีข้อมูลผู้สมัครรวมทั้งสิ้น **407 คน** จากโรงเรียนและสถาบันการศึกษาทั่วประเทศรวม **256 แห่ง**
+รายงานฉบับนี้จัดทำขึ้นจากการประมวลผลและวิเคราะห์ข้อมูลสถิติการรับสมัครนักศึกษาใหม่หลักสูตรวิทยาการคอมพิวเตอร์ ย้อนหลัง 5 ปีการศึกษา (2565 – 2569) จากฐานข้อมูล [Admissiom.xlsx](./Admissiom.xlsx) ซึ่งมีข้อมูลผู้สมัครรวมทั้งสิ้น **407 คน** จากโรงเรียนและสถาบันการศึกษาทั่วประเทศรวม **256 แห่ง**
 
 ### ประเด็นสำคัญจากการวิเคราะห์ 5 ปี (Key Insights)
 1. **โซนพื้นที่เป้าหมายหลัก (Geographic Cluster):** ผู้สมัครกว่า 75% อยู่ใน 2 จังหวัดหลัก ได้แก่ **จังหวัดปทุมธานี (52%)** และ **จังหวัดพระนครศรีอยุธยา (23%)** ตามมาด้วย **อ่างทอง (8%)**, **สระบุรี (5%)**, **กรุงเทพฯ (3.5%)** และจังหวัดในภาคกลาง/ตะวันออก
@@ -147,5 +147,5 @@ gantt
 
 ---
 *จัดทำรายงานโดย: ระบบวิเคราะห์ข้อมูลการรับสมัครนักศึกษา หลักสูตรวิทยาการคอมพิวเตอร์*  
-*ไฟล์ข้อมูลต้นทาง: [Admissiom.xlsx](file:///e:/chavalit/colab/cs-office/admissions/analysis/Admissiom.xlsx)*  
+*ไฟล์ข้อมูลต้นทาง: [Admissiom.xlsx](./Admissiom.xlsx)*  
 *วันที่ประมวลผล: 20 กันยายน 2569*
